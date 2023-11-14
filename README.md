@@ -1,2 +1,2 @@
-# advocacyproject
+# embraceyourmind
 Embrace Your Mind website
