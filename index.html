@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Embrace Your Mind</title>
+  <link rel="icon" href="img/head.jpg">
+  <link href="reset.css" rel="stylesheet" type="text/css" />
+  <link href="reset-webview.css" rel="stylesheet" type="text/css" />
+  <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Part 1: Navbar Starter Code -->
+
+    <div class="navbar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#resources">Resources</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><button id="theme-button">Toggle Dark Mode</button></li>
+      </ul>
+    </div>
+  
+  <header class="header-container">
+    <div class="header-item">
+      <h1>Embrace Your Mind</h1>
+      <h3>Inspire Your Best Self</h3>
+    </div>
+
+    <div id="header-img">
+      <img src="img/mentalhealth1.png" height="200" alt="a person using a watering on the head with a heart inside"/>
+    </div>
+
+    <div>
+      <button class="header-button" href="https://www.cdc.gov/mentalhealth/learn/index.htm">Learn More About Mental Health</button>
+       <button class="header-button">Resources</button>
+      <button id="reduce-motion">Reduce Motion</button>
+    </div>
+  </header>
+  
+  <!--- About --->
+  <div class="revealable active">
+    <h2 id="about">About Mental Health</h2>
+    <p>According to the Centers for Diseases Control and Prevention's website, mental health is defined as it "includes our emotional, psychological, and social well-being. It affects how we think, feel, and act. It also helps determine how we handle stress, relate to others, and make healthy choices." Mental health plays an essential role in every stage of life, from childhood and adolescence to adulthood.</p>
+  
+    <iframe src="https://www.youtube.com/embed/BpzVvUGfJeA?si=k84Ch-cW7XBPlc8o"></iframe>
+  
+    <p>Although there is no single cause for mental health, there are many factors that can contribute it. Some of these factors are: </p>
+    <ul>
+      <li>Various Childhood Experiences such as tramua and a history of abuse (i.e. Child Abuse, Sexual Assault, etc.)</li>
+      <li>Experiences related to other ongoing (chronic) medical conditions, (i.e. cancer, diabetes, etc.)</li>
+      <li>Having feelings of loneliness/isolation</li>
+      <li>Use of alcohol and/or drugs</li>
+    </ul>
+  
+    <img src="img/mentalhealth2.jpeg" width="200" height="200" alt="an arm lending to a girl sitting with her head down"/>
+  </div>
+
+  <div class="revealable">
+    <h2>Resources</h2>
+    <p><a href="https://www.cdc.gov/mentalhealth/learn/index.htm">CDC Mental Health</a></p>
+    <p><a href="https://www.cdc.gov/emotional-wellbeing/features/power-of-connection.htm"> Power of Connection: How It Can Improve Our Health</a></p>
+    <p><a href="https://www.cdc.gov/howrightnow/emotion/index.html"> Explore you emotions (CDC)</a></p>
+  </div>
+
+  <div class="footer">
+    <p><a href="https://www.cdc.gov/emotional-wellbeing/index.htm">Learn More</a></p>
+    <p><a href="https://www.linkedin.com/in/amykwong24/">Contact thru LinkedIn</a></p>
+    
+  </div> 
+
+  <div class="petition revealable" id="petition">
+
+    <h2>Sign Our Petition 📢</h2>
+    <div class="petition-container revealable">
+      <div class="petition-para">
+        <!-- info goes here -->
+        <p>Prioritize your mental well-being today. Explore the range of mental health services available to you. Reach out to a therapist, counselor, or support group, and start your journey towards a happier, healthier, and more fulfilling life. Your mental health matters – take action now.</p>
+      </div>
+
+      <div class="signatures revealable">
+        <p>🖊️ Gary from Riverside supports this.</p>
+        <p>🖊️ Bella from Los Angeles supports this.</p>
+        <p>🖊️ Iris from Los Angeles supports this.</p>
+        <p>🖊️ Tyler from Irvine supports this.</p>
+        <p id="counter">🖊️4 people have signed this petition and support this cause.</p>
+      </div>
+      
+    </div>
+
+  <!--- Sign Petition Form --->
+  <form id="sign-petition" title="sign-petition">
+    <!-- inputs go here -->
+    <label for="name">Name:</label>
+    <input id="name" type="text">
+    <label for="hometown">Hometown:</label>
+    <input id="hometown" type="text">
+    <label for="email">Email address:</label>
+    <input id="email" type="email">
+  </form>
+
+   <!--- Sign Now Button --->
+  <button id="sign-now-button">Sign Now</button>
+
+</div>
+
+  <!-- Modal -->
+  <div id="thanks-modal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <div id="modal-text-container">
+        <!-- text here -->
+        <p id="thanks-modal-content">Thank you for signing! <3 </p>
+        <!-- button here (stretch feature) -->
+        <button id="close-modal-button">Close</button>
+      </div>
+      <!-- image here-->
+      <img src="img/rilakkuma.jpg" alt="Rilakkuma">
+    </div>
+
+  </div>
+  <!--
+  This script places a badge on your repl's full-browser view back to your repl's cover
+  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+  teal, blue, blurple, magenta, pink!
+  -->
+  <script src="https://replit.com/public/js/replit-badge-v2.js" theme="blue" position="bottom-right"></script>
+  
+  <script src="index.js"></script>
+</body>
+
+</html>
